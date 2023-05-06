@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package IgnorableNamespaces="build" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  
+  <Identity Name="JazzJackrabbit2" Publisher="CN=DM" Version="1.8.0.0" ProcessorArchitecture="x64"/>
+  <mp:PhoneIdentity PhoneProductId="a7153bb5-7dc8-4985-9f9c-3853f96034c9" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <Properties>
+    <DisplayName>Jazz Jackrabbit 2</DisplayName>
+    <PublisherDisplayName>DM</PublisherDisplayName>
+    <Logo>Assets/StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.18362.0" MaxVersionTested="10.0.22621.0"/>
+    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.30704.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
+  </Dependencies>
+  <Resources>
+    <Resource Language="EN-US"/>
+    
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="ncine.exe" EntryPoint="ncine.App">
+      <uap:VisualElements DisplayName="Jazz Jackrabbit 2" Description="Open-source reimplementation of Jazz Jackrabbit 2" BackgroundColor="#FFFFFF" Square150x150Logo="Assets/Logo.png" Square44x44Logo="Assets/SmallLogo.png">
+        <uap:SplashScreen Image="Assets/SplashScreen.png"/>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient"/>
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="cl.exe" Version="19.33.31630.0"/>
+    <build:Item Name="VisualStudio" Version="17.0"/>
+    <build:Item Name="OperatingSystem" Version="10.0.20348.1 (WinBuild.160101.0800)"/>
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="17.3.32728.75"/>
+    <build:Item Name="ProjectGUID" Value="{08A45C64-DB7B-3A3E-8570-EC50DA075CE5}"/>
+    <build:Item Name="OptimizingToolset" Value="None"/>
+    <build:Item Name="TargetRuntime" Value="Native"/>
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="0.0.0.0"/>
+    <build:Item Name="MakePri.exe" Version="10.0.22621.1 (WinBuild.160101.0800)"/>
+  </build:Metadata>
+</Package>
